@@ -2,7 +2,7 @@ function isValid(ip) {
     try {
         var parts = ip.split('.');
 
-        var min = 0x00000001;
+        var min = 0x01000000;
         var max = 0xFFFFFFFF;
 
         if (parts.length !== 4) return false;
